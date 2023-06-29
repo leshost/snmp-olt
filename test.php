@@ -94,7 +94,7 @@ function sortTable(n) {
 <?php
 
 $time1= date("Y-m-d H:i:s");
-$ip='ip-address-here';
+$ip='10.10.0.4';
 $ro='public';
 $session = new SNMP(SNMP::VERSION_2C, $ip, $ro);
 $ifDescr = $session->walk(".1.3.6.1.2.1.2.2.1.2", TRUE);
